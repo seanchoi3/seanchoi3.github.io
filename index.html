@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" type="text/css" href ="style.css" href = "showButton.js">
+    <link href = "https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
+    <title>Sean Choi's Portfolio</title>
+    <style>
+        .hidden {
+          display: none;
+        }
+      </style>
+    <script>
+         document.addEventListener('DOMContentLoaded', function() {
+        var hideButton = document.getElementById('shutdownn');
+         var elementsToHide = document.querySelectorAll('.everything');
+
+        hideButton.addEventListener('click', function() {
+        for (var i = 0; i < elementsToHide.length; i++) {
+            elementsToHide[i].classList.add('hidden');
+        }
+      });
+    });
+    </script>
+</head>
+<body>
+    <div class = "everything">
+        <p class="bubble" id = "bubblespeech">Hi! My name is Sean Choi, and I am a Computer Science major student 
+            at University of Calgary that is pursuing a degree in Bachelor of Science. 
+        <br><br> This is a personal portfolio website <br>and I built this website using HTML/CSS/Javascript 
+
+        </p>
+        <p class="bubble" id = "bubblecontact">Email: seannnchoi@gmail.com <br>
+                                                Phone: 587-707-1142</p>
+        <h1 class = "header">Sean</h1>
+        <h1 class = "header2">Choi</h1>
+       
+        
+        <div class = "buttons">
+            <button class ="profile" id = "user" onclick="myfunction2()">
+                <img src = "images/user.png">
+            </button>
+            <span class = "overlay"></span>
+            
+            <small class ="profileText" id = "userText">About Me</small>
+            
+            <button class = "contact" id = "cont" onclick = "myfunction3()">
+                <img src = "images/mail.png">
+            </button>
+            <small class ="contactsText" id = "contText" >Contacts</small>
+            
+            <a href = "project.html" > <button class = "project" id = "proj">
+                <img src ="images/project.png">
+            </button> </a>  
+            <small class ="projectText" id = "projText">Projects</small>
+            
+            <a href = "assets/seanchoi_resume.pdf" target="_blank"><button class = "resume" id = "resme">
+                <img src="images/resume.png">
+            </button></a>
+            <small class ="resumeText" id ="resmeText">Resume</small>
+            
+            <a href = "https://github.com/seanchoii?tab=repositories" target="_blank"><button class ="github" id = "ghub">
+                <img src= "images/github-logo.png">
+                </button></a>    
+            <small class = "githubText" id = "ghubText">GitHub</small>
+            
+            <a href = "https://www.linkedin.com/in/sean-choi-220039275/" target="_blank"><button class ="linkedin" id = "linked">
+                <img src = "images/in.png">
+            </button></a>
+            <small class = "linkedinText" id = "linkedText">LinkedIn</small>
+            
+            <a href="https://www.instagram.com/seanseohyunchoi/?hl=en" target="_blank"><button class = "instagram" id = "ig">
+                <img src ="images/instagram.png">
+            </button></a>
+            <small class = "instagramText" id = "igText">Instagram</small>
+            
+            <a href="https://www.arsenal.com/" target="_blank"><button class = "garbage" id = "garb">
+                <img src = "images/garbage.png">
+            </button></a>
+            <small class ="garbageText" id = "garbText">Garbage</small>
+        </div>
+
+        <div class ="bottom" id = "bot">
+            <div class = "dropup">
+            <button onclick = "myfunction()" class = "start" id = "startt">Start</button>
+            <div id = "mydropup" class = "dropup-menu">
+                <a href="#" id = "shutdownn">
+                    <span class = "shutdown-icon"><ion-icon name="power-outline"></ion-icon></span>
+                            <span class = "shutdown">Shut Down</span>
+                </a>
+                <a href="#" onclick="window.location.reload();">
+                    <span><ion-icon name="refresh-outline"></ion-icon></span>
+                    <span class = "restart">Restart</span>
+                </a>
+            </div>
+            </div>
+            <button class = "search" id = "searchh"></button>
+            <button class = "time" id ="timee"></button>
+        </div>
+</div> 
+    <script src = "script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
