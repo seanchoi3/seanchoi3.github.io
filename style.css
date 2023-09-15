@@ -465,98 +465,98 @@ small{
 }
 /*for phones*/
 @media screen and (max-width:500px) {
-    .bottom{
+.bottom{
         display:none;
     }
 
     .header{
-        font-size:15px;
+        font-size:10px;
         right:10px;
         top:0px;
     }
     .header2{
-        font-size:15px;
+        font-size:10px;
         right:10px;
-        top:20px;
+        top:10px;
     }
 
     .profile{
-        right:380px;
+        right:325px;
     }
     .profileText{
-        right:385px;
+        right:330px;
     }
     .contact{
-        right:280px;
+        right:225px;
     }
     .contactsText{
-        right:289px;
+        right:234px;
     }
     .project{
-        right:180px;
+        right:125px;
     }
     .projectText{
-        right:189px;
+        right:134px;
     }
     .resume{
-        right:80px;
+        right:25px;
     }
     .resumeText{
-        right:89px;
+        right:34px;
     }
     .github{
-        right:380px;
+        right:325px;
     }
     .githubText{
-        right:391px;
+        right:336px;
     }
     .linkedin{
-        right:280px;
+        right:225px;
     }
     .linkedinText{
-        right:289px;
+        right:234px;
     }
     .instagram{
-        right:180px;
+        right:125px;
     }
     .instagramText{
-        right:185px;
+        right:130px;
     }
     .garbage{
-        right:80px;
+        right:25px;
     }
     .garbageText{
-        right:89px;
+        right:34px;
     }
 
     .pixelAdventure{
-        right:380px;
+        right:325px;
     }
     .pixelAdventureText{
-        right:380px;
+        right:325px;
     }
     .portfolioWebsite{
-        right:280px;
+        right:225px;
         
     }
     .portfolioText{
-        right:284px;
+        right:229px;
     }
     .tottenham{
-        right:180px;
+        right:125px;
     }
     .tottenhamText{
-        right:180px;
+        right:125px;
     }
     .bubble{
         width:80%;
         right:25px;
         top:300px;
-        height:17%;
+        height:20%;
     }
     .bubbleSign{
         width:80%;
-        height:33%;
+        height:40%;
         right:25px;
         top:200px;
     }
