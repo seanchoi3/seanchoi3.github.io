@@ -108,13 +108,26 @@ button img{
     
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:425px) {
 
     .bubbleSign{
         width:80%;
-        height:35%;
-        right:35px;
+        height:40%;
+        right:22px;
         top:250px;
     }
 
+    .buttons button{
+        width:70px;
+        margin-left:5px;
+        
+    }
+    button img{
+        width:25px;
+        height:25px;
+    }
+    button small{
+        display:none;
+    }
+    
 }
