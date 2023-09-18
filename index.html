@@ -4,105 +4,94 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel ="stylesheet" type="text/css" href ="style.css" href = "showButton.js">
-    <link href = "https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
+    <link rel ="stylesheet" type="text/css" href ="style.css">
     <title>Sean Choi's Portfolio</title>
-    <style>
-        .hidden {
-          display: none;
-        }
-      </style>
-    <script>
-         document.addEventListener('DOMContentLoaded', function() {
-        var hideButton = document.getElementById('shutdownn');
-         var elementsToHide = document.querySelectorAll('.everything');
-
-        hideButton.addEventListener('click', function() {
-        for (var i = 0; i < elementsToHide.length; i++) {
-            elementsToHide[i].classList.add('hidden');
-        }
-      });
-    });
-    </script>
 </head>
 <body>
-    <div class = "everything">
-        <p class="bubble" id = "bubblespeech">Hi! My name is Sean Choi, and I am a Computer Science major student 
+        
+    <div id = "bubbleProfile" style = "display: none">
+        <p class="bubbleProfile">Hi! My name is Sean Choi, and I am a Computer Science major student 
             at University of Calgary that is pursuing a degree in Bachelor of Science. 
         <br><br> This is a personal portfolio website <br>and I built this website using HTML/CSS/Javascript 
-
         </p>
-        <p class="bubble" id = "bubblecontact">Email: seannnchoi@gmail.com <br>
-                                                Phone: 587-707-1142</p>
-        <h1 class = "header">Sean</h1>
-        <h1 class = "header2">Choi</h1>
-       
+    </div>
+    <div id = "bubbleContact" style = "display: none">
         
-        <div class = "buttons">
-            <button class ="profile" id = "user" onclick="myfunction2()">
+        <p class="bubbleContact">Email: seannnchoi@gmail.com <br>
+                                                Phone: 587-707-1142</p>
+                                            </div>
+    <div class = "logo">
+        <h2>Sean <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Choi</h2>
+    </div>
+    <br><br><br><br>
+    
+    <div class = "buttons">  
+        <div class = "topButtons">
+            <button class ="profile" id = "profile" onclick ="toggleProfile()">
                 <img src = "images/user.png">
+                <br>
+                <small>About me</small>
             </button>
-            <span class = "overlay"></span>
-            
-            <small class ="profileText" id = "userText">About Me</small>
-            
-            <button class = "contact" id = "cont" onclick = "myfunction3()">
+
+            <button class ="contact" id = "contact" onclick = "toggleContacts()">
                 <img src = "images/mail.png">
+                <br>
+                <small>Contacts</small>
+            </button>      
+            
+            <a href = "project.html"><button class ="project">
+                    <img src = "images/project.png">
+                    <br>
+                    <small>Projects</small>
+            </button></a>       
+            
+            <a href = "assets/seanchoi_resume.pdf" target ="_blank"><button class ="resume">
+                <img src = "images/resume.png">
+                <br>
+                <small>Resume</small>
             </button>
-            <small class ="contactsText" id = "contText" >Contacts</small>
+        </div> 
+        <br><br><br><br><br><br><br>
+        <div class = "bottomButtons">   
+            <a href = "https://github.com/seanchoii?tab=repositories" target="_blank"><button class ="github">
+                <img src = "images/github-logo.png">
+                 <br>
+                <small>Github</small>
+            </button></a>  
             
-            <a href = "project.html" > <button class = "project" id = "proj">
-                <img src ="images/project.png">
-            </button> </a>  
-            <small class ="projectText" id = "projText">Projects</small>
-            
-            <a href = "assets/seanchoi_resume.pdf" target="_blank"><button class = "resume" id = "resme">
-                <img src="images/resume.png">
-            </button></a>
-            <small class ="resumeText" id ="resmeText">Resume</small>
-            
-            <a href = "https://github.com/seanchoii?tab=repositories" target="_blank"><button class ="github" id = "ghub">
-                <img src= "images/github-logo.png">
-                </button></a>    
-            <small class = "githubText" id = "ghubText">GitHub</small>
-            
-            <a href = "https://www.linkedin.com/in/sean-choi-220039275/" target="_blank"><button class ="linkedin" id = "linked">
+            <a href = "https://www.linkedin.com/in/sean-choi-220039275/" target="_blank"><button class ="linkedin">
                 <img src = "images/in.png">
+                <br>
+                <small>Linkedin</small>
             </button></a>
-            <small class = "linkedinText" id = "linkedText">LinkedIn</small>
             
-            <a href="https://www.instagram.com/seanseohyunchoi/?hl=en" target="_blank"><button class = "instagram" id = "ig">
-                <img src ="images/instagram.png">
+            <a href="https://www.instagram.com/seanseohyunchoi/?hl=en" target="_blank"><button class ="instagram">
+                <img src = "images/instagram.png">
+                <br>
+                <small>Social</small>
             </button></a>
-            <small class = "instagramText" id = "igText">Instagram</small>
             
-            <a href="https://www.arsenal.com/" target="_blank"><button class = "garbage" id = "garb">
+            <a href="https://www.arsenal.com/" target="_blank"><button class ="garbage">
                 <img src = "images/garbage.png">
+                <br>
+                <small>Garbage</small>
             </button></a>
-            <small class ="garbageText" id = "garbText">Garbage</small>
+        </div>  
+    </div>
+
+    <div class = "bottomGrid">
+        <div class = "options">
+            Start
+        </div>
+        <div class = "options">
+          
+        </div>
+        <div class = "options" id = "time">
+            
         </div>
 
-        <div class ="bottom" id = "bot">
-            <div class = "dropup">
-            <button onclick = "myfunction()" class = "start" id = "startt">Start</button>
-            <div id = "mydropup" class = "dropup-menu">
-                <a href="#" id = "shutdownn">
-                    <span class = "shutdown-icon"><ion-icon name="power-outline"></ion-icon></span>
-                            <span class = "shutdown">Shut Down</span>
-                </a>
-                <a href="#" onclick="window.location.reload();">
-                    <span><ion-icon name="refresh-outline"></ion-icon></span>
-                    <span class = "restart">Restart</span>
-                </a>
-            </div>
-            </div>
-            <button class = "search" id = "searchh"></button>
-            <button class = "time" id ="timee"></button>
-        </div>
-</div> 
+    </div>
     <script src = "script.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</body>
 
+</body>
 </html>
