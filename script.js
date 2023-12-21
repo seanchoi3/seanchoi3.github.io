@@ -7,11 +7,15 @@ var prev_handler = window.onload;
 
 var profileButton = document.getElementById("profile");
 var contactButton = document.getElementById("contact");
-
+var bubbleProfile = document.getElementById("bubbleProfile");
+var bubbleContact = document.getElementById("bubbleContact");
+var pixelAdventure = document.getElementById("bubblePixelAdventure");
+var portfolio = document.getElementById("mywebsite");
+var tottenham = document.getElementById("tottenhamP");
+var seansational = document.getElementById('seansational');
+const listProjects = [pixelAdventure, portfolio, tottenham, seansational];
 
 function toggleProfile(){
-    var bubbleProfile = document.getElementById("bubbleProfile");
-    var bubbleContact = document.getElementById("bubbleContact");
 
     if(bubbleProfile.style.display == "none")
     {
@@ -25,8 +29,6 @@ function toggleProfile(){
 }
 
 function toggleContacts(){
-    var bubbleContact = document.getElementById("bubbleContact");
-    var bubbleProfile = document.getElementById("bubbleProfile");
 
     if(bubbleContact.style.display == "none")
     {
@@ -38,55 +40,9 @@ function toggleContacts(){
     }
 }
 
-function togglePixelAdventure(){
-    var pixelAdventure = document.getElementById("bubblePixelAdventure");
-    var portfolio = document.getElementById("mywebsite");
-    var tottenham = document.getElementById("tottenhamP");
-
-    if(pixelAdventure.style.display == "none")
-    {
-        pixelAdventure.style.display = "block";
-        portfolio.style.display = "none";
-        tottenham.style.display = "none";
-
-    }else
-    {
-        pixelAdventure.style.display = "none";
+function toggleProfile(num){
+    for(i = 0; i < listProjects.length; i++){
+        listProjects[i].style.display = "none";
     }
+    listProjects[num].style.display = "block";
 }
-
-function togglePortfolio(){
-    var pixelAdventure = document.getElementById("bubblePixelAdventure");
-    var portfolio = document.getElementById("mywebsite");
-    var tottenham = document.getElementById("tottenhamP");
-
-    if(portfolio.style.display == "none")
-    {
-        pixelAdventure.style.display = "none";
-        portfolio.style.display = "block";
-        tottenham.style.display = "none";
-
-    }else
-    {
-        portfolio.style.display = "none";
-    }
-}
-
-function toggleTottenham(){
-    var pixelAdventure = document.getElementById("bubblePixelAdventure");
-    var portfolio = document.getElementById("mywebsite");
-    var tottenham = document.getElementById("tottenhamP");
-
-    if(tottenham.style.display == "none")
-    {
-        pixelAdventure.style.display = "none";
-        portfolio.style.display = "none";
-        tottenham.style.display = "block";
-
-    }else
-    {
-        tottenham.style.display = "none";
-    }
-}
-
-
