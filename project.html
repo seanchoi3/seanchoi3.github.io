@@ -33,27 +33,40 @@
         <br><br><a target="_blank" href="assets/Presentation 4.pptx"><img src = "images/microsoft-powerpoint-2013-logo-black-and-white.png"></a>&nbsp;
         <a target="_blank" href="assets/tottenham.pbix"><img src = "images/powerbi.png"></a>
     </p>
+
+    <p class = "bubbleSign" id = "seansational" style = "display: none;"> 
+        My personal food review application created using React. If you do not know where to eat out in Calgary, use my application to find your restaurant for the night!
+        <br><br>
+        Mapped out restaurants using Google Maps API and each restaurants are marked by food icons. If the icons are clicked, 
+        it will pop a brutally honest food review on that restaurant     
+        <br><br><a href = "https://github.com/seanchoii/SeansationalChoices" target="_blank"><img src = "images/github-logo.png"></a>
+    </p>
     <a href = "index.html"><button class = "close"><img src = "images/close.png"></button></a>
     <div class = "buttons">
         <br><br><br><br>
-        <button class ="pixelAdventure"  onclick="togglePixelAdventure()">
+        <button class ="pixelAdventure"  onclick="toggleProfile(0)">
             <img src = "images/Jump (32x32).png">
             <br>
             <small>Pixel <br>Adventure</small>
         </button>
         
-
-        <button class ="portfolioWebsite"  onclick="togglePortfolio()">
+        <button class ="portfolioWebsite"  onclick="toggleProfile(1)">
             <img src = "images/portfolio.png">
             <br>
             <small >Portfolio <br>Website</small>
         </button>
         
 
-        <button class ="tottenham"  onclick="toggleTottenham()">
+        <button class ="tottenham"  onclick="toggleProfile(2)">
             <img src = "images/tottenham.png">
             <br>
             <small >Tottenham <br>Powerpoint</small>
+        </button>
+
+        <button class ="seansational"  onclick="toggleProfile(3)">
+            <img src = "images/hamburger.svg">
+            <br>
+            <small >Seansational <br>Choices</small>
         </button>
        
 
