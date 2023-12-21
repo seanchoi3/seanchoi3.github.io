@@ -5,8 +5,6 @@ window.onload = function() {
   
 var prev_handler = window.onload;
 
-var profileButton = document.getElementById("profile");
-var contactButton = document.getElementById("contact");
 var bubbleProfile = document.getElementById("bubbleProfile");
 var bubbleContact = document.getElementById("bubbleContact");
 var pixelAdventure = document.getElementById("bubblePixelAdventure");
@@ -15,30 +13,16 @@ var tottenham = document.getElementById("tottenhamP");
 var seansational = document.getElementById('seansational');
 var pig = document.getElementById('pig');
 const listProjects = [pixelAdventure, portfolio, tottenham, seansational, pig];
+const listProfile = [bubbleProfile, bubbleContact];
 
-function toggleProfile(){
-
-    if(bubbleProfile.style.display == "none")
-    {
-        bubbleProfile.style.display = "block";
-        bubbleContact.style.display = "none";
-    }else
-    {
-        bubbleProfile.style.display = "none";
-    }
-
-}
-
-function toggleContacts(){
-
-    if(bubbleContact.style.display == "none")
-    {
-        bubbleContact.style.display = "block";
-        bubbleProfile.style.display = "none";
-    }else
-    {
-        bubbleContact.style.display = "none";
-    }
+function toggleUser(num){
+    if(listProfile[num].style.display === "block"){
+        listProfile[num].style.display = "none";
+    }else{
+        listProfile[0].style.display = "none";
+        listProfile[1].style.display = "none";
+        listProfile[num].style.display = "block";
+    }    
 }
 
 function toggleProfile(num){
