@@ -13,7 +13,8 @@ var pixelAdventure = document.getElementById("bubblePixelAdventure");
 var portfolio = document.getElementById("mywebsite");
 var tottenham = document.getElementById("tottenhamP");
 var seansational = document.getElementById('seansational');
-const listProjects = [pixelAdventure, portfolio, tottenham, seansational];
+var pig = document.getElementById('pig');
+const listProjects = [pixelAdventure, portfolio, tottenham, seansational, pig];
 
 function toggleProfile(){
 
