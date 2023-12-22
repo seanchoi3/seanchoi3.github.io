@@ -1,9 +1,4 @@
-window.onload = function() {
-    var date = new Date();
-    document.getElementById("time").innerHTML = date.toLocaleDateString("en-US");
-  }
-  
-var prev_handler = window.onload;
+
 
 var bubbleProfile = document.getElementById("bubbleProfile");
 var bubbleContact = document.getElementById("bubbleContact");
@@ -14,6 +9,13 @@ var seansational = document.getElementById('seansational');
 var pig = document.getElementById('pig');
 const listProjects = [pixelAdventure, portfolio, tottenham, seansational, pig];
 const listProfile = [bubbleProfile, bubbleContact];
+
+var prev_handler = window.onload;
+window.onload = function() {
+    var date = new Date();
+    document.getElementById("time").innerHTML = date.toLocaleDateString("en-US");
+    };
+
 
 function toggleUser(num){
     if(listProfile[num].style.display === "block"){
@@ -31,3 +33,4 @@ function toggleProfile(num){
     }
     listProjects[num].style.display = "block";
 }
+
