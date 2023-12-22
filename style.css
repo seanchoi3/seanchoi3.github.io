@@ -110,7 +110,9 @@ body{
 
   .buttons button:hover{
     transform: scale(1.1) perspective(1px);
+    background-color: #eceaea;
     color:#000;
+    animation-play-state: paused;
   }
 
   .buttons button:active{
@@ -126,7 +128,18 @@ body{
     height:50px;
     width: 50px;
   }
-
+  
+  @keyframes animateDown {
+    0% {
+        transform: translateY(-150px); /* Initial state at 0% */
+      }
+      50% {
+        transform: translateY(20px); /* Middle state at 50% */
+      }
+      100% {
+        transform: translateY(0); /* Final state at 100% */
+      }
+  }
  .topButtons{
     margin-left:30px;
  }
@@ -142,14 +155,24 @@ body{
     bottom:0px;
     width:100%;
     border:2px solid;
+    animation: slideUp 3s ease forwards;
+
  }
 .options{
     padding:10px;
     border:2px solid;
     text-align:center;
+
 }
 
-
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+      }
+      to {
+        transform: translateY(0);
+      }
+}
 
 
 
